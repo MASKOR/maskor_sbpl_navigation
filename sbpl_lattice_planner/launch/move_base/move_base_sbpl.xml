@@ -9,7 +9,7 @@
     <!--rosparam file="$(find sbpl_lattice_planner)/launch/move_base/base_local_planner_params_close.yaml" command="load" /-->
     <param name="base_local_planner" value="pose_follower/PoseFollower" />
     <!--param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" /-->
-    <param name="SBPLLatticePlanner/primitive_filename" value="$(find sbpl)/matlab/mprim/rover.mprim" />
+    <param name="SBPLLatticePlanner/primitive_filename" value="$(find sbpl_lattice_planner)/rover.mprim" />
     <rosparam file="$(find sbpl_lattice_planner)/launch/move_base/costmap_common_params.yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find sbpl_lattice_planner)/launch/move_base/costmap_common_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find sbpl_lattice_planner)/launch/move_base/local_costmap_params_close.yaml" command="load" />
