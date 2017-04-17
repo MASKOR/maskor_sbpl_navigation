@@ -2099,7 +2099,8 @@ int EnvironmentNAVXYTHETALAT::SetStart(double x_m, double y_m, double theta_rad)
     SBPL_PRINTF("env: setting start to %.3f %.3f %.3f (%d %d %d)\n", x_m, y_m, theta_rad, x, y, theta);
 
     if (!IsValidConfiguration(x, y, theta)) {
-        SBPL_PRINTF("WARNING: start configuration %d %d %d is invalid\n", x, y, theta);
+        SBPL_ERROR("ERROR: start configuration %d %d %d is invalid (crashing against obstacles)\n", x, y, theta);
+        return -1;
     }
 
     EnvNAVXYTHETALATHashEntry_t* OutHashEntry;

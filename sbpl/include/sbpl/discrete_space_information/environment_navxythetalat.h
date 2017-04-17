@@ -44,7 +44,7 @@
 //0 - is aligned with X-axis in the positive direction (1,0 in polar coordinates)
 //theta increases as we go counterclockwise
 //number of theta values - should be power of 2
-#define NAVXYTHETALAT_THETADIRS 16
+#define NAVXYTHETALAT_THETADIRS 32
 //number of actions per x,y,theta state
 //decrease, increase, same angle while moving plus decrease, increase angle while standing.
 #define NAVXYTHETALAT_DEFAULT_ACTIONWIDTH 5 
